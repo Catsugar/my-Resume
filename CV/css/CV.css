@@ -1,0 +1,267 @@
+body,div,li,ul{padding:0;margin:0;}
+body{
+    overflow: hidden; 
+	height: 100%;
+    font:14px "Microsoft Yahei";}
+a{text-decoration: none; color:#666;}
+#superContainer{top: 0px;}
+ul,li{list-style:none}
+
+/*********************************icon*****************************************/
+@font-face {
+  font-family: 'iconfont';  /* project id 223250 */
+  src: url('http://at.alicdn.com/t/font_gta31anjamijxlxr.eot');
+  src: url('http://at.alicdn.com/t/font_gta31anjamijxlxr.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_gta31anjamijxlxr.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_gta31anjamijxlxr.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_gta31anjamijxlxr.svg#iconfont') format('svg');
+}
+ .iconfont {
+  font-family: 'iconfont';
+  font-style:normal;
+  
+}
+/*********************************导航*****************************************/
+#menu { 
+    position: fixed; 
+	right: 20px; 
+	top: 50%; 
+	width: 90px; 
+	margin: -160px 0 0; 
+	padding: 0; 
+	list-style-type: none; 
+	z-index: 70;}
+#menu li { 
+    margin-top: 15px; 
+	border-bottom: 0.15rem solid #040000;
+	background: #fae2ed;
+	box-shadow: 0 0.25rem 0.25rem rgba(0,0,0,0.5);
+	border-radius:5px;}
+#menu a { 
+    border-radius:5px;
+    display: block; 
+	padding: 10px 5px; 
+	background-color: #fff; 
+	color: #333; 
+	text-align: center; 
+	text-decoration: none;
+	font:bold 14px "Microsoft Yahei";}
+#menu .active a { color: #fff; background-color:rgba(255,70,70,0.8);}
+/***************每一屏幕****************/
+.section { 
+    text-align: center; 
+	font: 18px "Microsoft Yahei"; 
+	color: #fff;}
+.setion-main{ position: relative; width: 1080px; height: 850px; margin: 0 auto; overflow: hidden;}
+.screen-main { position: relative; width: 1280px; height: 840px; margin: 0 auto;}
+/******************************主体1部分(home)***********************************/
+.top2{padding-top: 4%;opacity: 1;}
+#main_top{
+	position: relative;
+	z-index:2;
+	font-weight:bold;}
+.leader1{
+	color:rgba(223, 223, 223, 1);
+	text-shadow: 2px 1px 2px #000;
+	font-weight:bold;}
+.leader2{
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	font-weight:bold;
+	font-size:18px;}
+#main_top hr{
+	width:800px;
+    border-top: 2px solid #f8f8f8;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+	border: 1px outset rgba(255, 255, 255, 0.2);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    width: 80%;}
+/************当小屏幕时的响应式设计************/	
+@media(max-width:767px) {
+#main_top{padding-bottom: 5%;}
+#main_top > h1 {font-size: 3em; }
+#main_top ul.intro_link > li {display: block;margin-bottom: 20px;padding: 0;}
+#main_top ul.intro_link > li :last-child {margin-bottom: 0;}
+#main_top hr{width: 100%;}
+}
+.intro_link{
+	display:block;
+	margin:0 auto;
+	float:none;}
+.intro_link li a{
+	transform:scale(0.9);
+	margin-bottom:20px;
+	display:inline-block;
+    transition: 0.2s;
+	box-shadow:3px 3px 3px rgba(0,0,0,0.5);
+	text-shadow:1px 1px 1px rgba(0,0,0,0.6);
+	border:1px outset rgba(176,176,176,0.9);
+	border-radius:5px;}
+.intro_link li a:hover{
+	color:#fff;
+	background:rgba(0, 0, 0, 0.6);
+	transform:scale(1);
+	transition:0.2s;
+	box-shadow:3px 3px 3px rgba(0,0,0,0.5);
+	text-shadow:1px 1px 1px rgba(0,0,0,0.6);
+	letter-spacing: 2px;}
+.Intro_link li a span{
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	font-weight:bold;}	
+.intro_link li i{
+	font-size:24px;}
+/******************************主体3部分(技能)***********************************/
+.section3 a { 
+    text-decoration: none; 
+	color: #000; 
+	float: left; 
+	position: absolute; 
+	display: inline-block; 
+	white-space: nowrap;
+	opacity:0.7;
+	box-shadow:3px 3px 3px rgba(0,0,0,0.5);
+	text-shadow:1px 1px 1px rgba(0,0,0,0.6);
+}
+.section3 a:hover { 
+    color: #fff;
+	opacity:1;
+	box-shadow:3px 3px 3px rgba(0,0,0,0.5);
+	text-shadow:1px 1px 1px rgba(0,0,0,0.6);
+}
+/******************************主体4部分(作品)***********************************/
+.project_list{
+	width:100%;
+	margin-top:60px;
+	height:490px;
+	position:relative;}
+.project_title{
+	z-index:50;
+	width:60%;
+	height:60px;
+	position:absolute;
+	left:20%;
+	top:0px;
+	border-radius:10px;
+	background-color:rgba(255,70,70,1);
+	line-height:60px;
+	border:#D5D5D5 outset 2px;}
+.project_box{
+	width:90%;
+	position:absolute;
+	left:5%;
+	top:40px;
+	height:450px;
+	border-radius:10px;
+	background-color:rgba(204,204,204,0.8);
+	border:#D5D5D5 outset 2px;}
+.project_inbox{
+	width:80%;
+	height:370px;
+	margin:40px 15%;
+	border-radius:10px;
+	background-color:rgba(255,255,255,1);
+	border:#D5D5D5 inset 2px;
+	z-index:10;
+	overflow:hidden;
+	position:relative;}
+.project_inbox >ul{
+	width:100%;
+}
+.project_inbox >ul>li{
+	height:370px;
+	background-color:#FFF;
+	position:absolute;
+	left:0;
+	width:100%;
+	}
+.project_pic{
+	width:60%;
+	height:370px;
+	float:left;}
+.project_info{
+	width:40%;
+	height:100%;
+	float:left;}
+.project_info ul{
+	margin-top:50px;
+	height:200px;}
+.project_info ul> li{
+	text-align:left;
+	width:280px;
+	color:#333;
+	font:15px/25px "微软雅黑";
+	list-style-image:url(../images/icon.png);
+	margin-bottom:10px;
+	}
+.project_info > span{
+	width:50px;
+	height:50px;
+	display:inline-block;
+	background-color:rgba(255,70,70,0.8);
+	border-radius:50%;
+	margin-right:30px;
+	margin-bottom:100px;
+	float:right;}
+.code{
+	width:100%;
+	height:100%;
+	background:url(../images/code.png) center center no-repeat;
+	display:block;}
+.play{
+	width:100%;
+	height:100%;
+	background:url(../images/play.png) center center no-repeat;
+	display:block;}
+
+/*切换按钮****/
+.project-btnbox{
+	position:absolute;
+	left:90px;
+	top:26%;}
+.project-btnbox button{
+	margin-bottom:45px;
+	display:block;
+	box-shadow: 0 0.25rem 0.25rem rgba(0,0,0,0.5);
+    border-radius:5px;
+    display: block;
+	width:80px;
+	height:35px;
+	/*background-color: #fff; */
+	background-image: -webkit-linear-gradient(top, #eee, #fff,#eee);
+	text-align: center; 
+	text-decoration: none;}
+.project-btnbox button > i{
+	font-size:22px;
+	color:#666;}
+
+/******************************主体5部分(和我联系)**********************************/
+.contact { 
+    text-align:center;}
+.contact-con {
+	width:100%;
+	overflow: hidden; 
+	zoom: 1;
+	display:block;
+	clear:both;}
+.contact-con p,.contact-con h1{
+	clear:both;
+	width:100%;
+	display:block;}
+.contact-info{
+	width:400px;
+	display:block;
+	margin:0 auto;}
+.contact-info > a { 
+  float: left;
+  height:60px;
+  width:60px;
+  border-radius: 40px;
+  margin: 20px;
+  box-shadow:3px 3px 3px rgba(0,0,0,0.5);
+  text-shadow:1px 1px 1px rgba(0,0,0,0.6);
+}
+#contact_icon{ 
+  font-size:30px;
+	line-height:50px;}
+.contact h1 a:hover{
+	color:rgba(255,70,70,0.8);
+	text-shadow:2px 2px 2px rgba(105,105,105,0.6);}
