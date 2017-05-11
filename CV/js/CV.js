@@ -1,7 +1,5 @@
-/**********第四页的作品的轮播特效********/
-var T=["百度前端技术学院ife2017任务",
-"用fullpage实现的个人主页","单页特效Demo","天猫静态页面仿写"];
-var P=0;//设置作品切换的序号。
+
+/*************切换效果****************/
 $(document).ready(function() {
 	$.fn.fullpage({
 		slidesColor: ['#F9F3DC', '#F9F3DC', '#F9F3DC', '#F9F3DC', '#F9F3DC'],
@@ -23,7 +21,9 @@ $(document).ready(function() {
 			if(index == 5){$('#contact').fadeOut('slow');}
 		}
 	});
-	//第四页作品切换
+	/**********第四页的作品的轮播特效********/
+    var T=["百度前端技术学院ife2017任务","用fullpage实现的个人主页","单页特效Demo","天猫静态页面仿写"];
+    var P=0;//设置作品切换的序号。
 	for(i=0;i<4;i++){
 	  $('#'+i).click(function(){
 		var a=this.id;
